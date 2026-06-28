@@ -1,0 +1,27 @@
+{
+    "version": "2.9.0",
+    "description": "Advanced source code and text file printing — GUI (winprint) and terminal UI (wp).",
+    "homepage": "https://github.com/tig/winprint",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tig/winprint/releases/download/v2.9.0/Kindel.WinPrint-win-x64-Portable.zip",
+            "hash": "978545b83468d4fc583d8c9edcb3137813607f706dd44c302c531fb4cb69ac5a"
+        }
+    },
+    "bin": "current\\wp.exe",
+    "shortcuts": [
+        [
+            "WinPrint.exe",
+            "WinPrint"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tig/winprint/releases/download/v$version/Kindel.WinPrint-win-x64-Portable.zip"
+            }
+        }
+    }
+}
